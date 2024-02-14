@@ -1,0 +1,81 @@
+.text-vertical{
+    writing-mode: vertical-lr;
+}
+
+#overlay::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90.00deg, rgb(7, 43, 96) 12.5%,rgba(9, 48, 107, 0.53) 54.688%,rgba(10, 57, 126, 0) 100%);
+}
+
+.active-nav{
+    position: relative;
+}
+
+.active-nav:hover:before{
+    position: absolute;
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #336AEA;
+    top: -18px;
+    left: 15px;
+}
+
+
+.contact-overlay::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #0A2142;
+    opacity: 0.7;
+}
+
+
+.form-overlay::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff26;
+    border-radius: 12px;
+    opacity: 0.15;
+}
+
+
+.accordion::after{
+    content: "\002B";
+    float: right;
+    margin-right: 10px;
+}
+
+.active::after{
+    content: "\2212";
+}
+
+.info-overlay:hover .contact-info{
+    position: absolute;
+    display: block;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+}
+
+.contact-info:hover .info-overlay img{
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+}
+
+/* .sponsor-name::before{
+    position: absolute;
+    content: "sponsor-name";
+    left: 20px;
+    top: 20px;
+} */
